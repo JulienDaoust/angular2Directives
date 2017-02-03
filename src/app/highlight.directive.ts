@@ -1,11 +1,11 @@
-import {Directive, HostListener, HostBinding, Input, OnInit } from '@angular/core';
+import {Directive, HostListener, HostBinding, Input, OnInit} from '@angular/core';
 
 @Directive({
   selector: '[dirHighlight]'
 })
 export class HighlightDirective {
   @Input() defaultColor = 'white';
-  @Input('dirHighlight') highlightColor= 'green';
+  @Input('dirHighlight') highlightColor = 'green';
   private backgroundColor: string;
 
   @HostListener('mouseenter') mouseover() {
